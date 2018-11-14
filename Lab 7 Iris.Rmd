@@ -17,9 +17,13 @@ View(iris)
 
 
 iris_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point(aes(col = Species))+
+  geom_point(pch = 1, 
+             aes(col = Species))+
   xlab("Petal Length [units]")+
-  ylab("Petal Width [units]")
+  ylab("Petal Width [units]")+
+  ggtitle("THIS IS NOT A GRAPH")+
+  facet_wrap(~ Species, scale = "free")
+  
   
 
 iris_graph
