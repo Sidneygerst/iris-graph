@@ -1,0 +1,19 @@
+---
+title: "Lab 7 Iris Graph"
+author: "Sidney Gerst"
+date: "November 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#Load packages and iris data set
+library(tidyverse)
+
+View(iris)
+
+```
+
