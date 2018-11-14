@@ -15,5 +15,16 @@ library(tidyverse)
 
 View(iris)
 
+
+iris_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point(aes(col = Species))+
+  xlab("Petal Length [units]")+
+  ylab("Petal Width [units]")
+  
+
+iris_graph
+
+
+
 ```
 
